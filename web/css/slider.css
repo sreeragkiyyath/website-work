@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 28, 2016, 9:03:34 PM
+    Author     : sastha
+
+   <div class="container">
+			<div class="slider_wrapper">
+     <!--  <img src="img/img6.jpg "/>            
+       <img src="img/img7.jpg "/>            
+       <img src="img/img4.jpg "/>            
+       <img src="img/img2.jpg "/>            
+     
+      -->
+      
+      
+      <ul id="image_slider">
+          <li><img src="img/img6.jpg"></li>
+          <li><img src="img/img7.jpg"></li>
+          <li><img src="img/img1.jpg"></li>
+          <li><img src="img/img12.jpg"></li>
+          <li><img src="img/img14.jpg"></li>
+          <li><img src="img/img3.jpg"></li>
+          <li><img src="img/img4.jpg"></li>
+			
+      </ul>					
+			
+      <span class="nvgt" id="prev"></span>
+				
+      <span class="nvgt" id="next"></span>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+#image_slider{
+
+	position: relative;
+	height: auto;
+	list-style: none;
+	overflow: hidden;
+	float: left;
+	/*Chrom default padding for ul is 40px */
+	padding:0px;
+	margin:0px;
+}
+#image_slider li{
+	position: relative;
+	float: left;
+}
+.nvgt{
+	position:absolute;
+	top: 120px;
+	height: 50px;
+	width: 30px;
+	opacity: 0.6;
+}
+.nvgt:hover{
+	opacity: 0.9;
+}
+#prev{
+	background: #000 url(../img/next.png) no-repeat center;
+	left: 0px;
+}
+#next{
+	background: #000 url(../img/prev.png) no-repeat center;
+	right: 0px;
+}
+.container{
+  display: block;
+    position:absolute;
+    margin: auto;
+    height: 554px; 
+    left: 10%;
+    right: 10%;
+    margin-top: 958px;
+	padding:20px;
+	border:1px solid gray;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background: black;	
+}
+.slider_wrapper{
+	overflow: hidden;
+	position:relative;
+	height:550px;
+	top:auto;
+}
